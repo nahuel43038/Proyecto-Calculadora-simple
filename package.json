@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-calculadora",
+  "version": "1.0.0",
+  "description": "Calculadora simple con bootstrap y js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahuel43038/Proyecto-Calculadora-simple.git"
+  },
+  "author": "Nahuel Acosta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahuel43038/Proyecto-Calculadora-simple/issues"
+  },
+  "homepage": "https://github.com/nahuel43038/Proyecto-Calculadora-simple#readme"
+}
