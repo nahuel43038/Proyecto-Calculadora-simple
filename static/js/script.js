@@ -9,26 +9,27 @@ document.getElementById("division").addEventListener("click", () => operador = "
 document.getElementById("multiplicacion").addEventListener("click", () => operador = "multiplicacion");
 document.getElementById("suma").addEventListener("click", () => operador = "suma");
 document.getElementById("button").addEventListener("click", () => {
-    let valor1 = document.getElementById("number1").value;
-    let valor2 = document.getElementById("number2").value;
+    let valor1 = parseInt(document.getElementById("number1").value);
+    let valor2 = parseInt(document.getElementById("number2").value);
     document.getElementById("number1").value = "";
     document.getElementById("number2").value = "";
     
     switch(operador){
         case "resta": 
-        valor = "Resultado: " + (valor1 - valor2);
+        valor = valor1 - valor2;
         break;
         case "division": 
-        valor = "Resultado: " + (valor1 / valor2);
+        valor = valor1 / valor2;
         break;
         case "multiplicacion": 
-        valor = "Resultado: " + (valor1 * valor2);
+        valor = valor1 * valor2;
         break;
-        default: 
-        valor = "Resultado: " + (valor1 + valor2);
+        case "suma": 
+        valor = valor1 + valor2;
         break;
     }
-    document.getElementById("result").innerHTML = valor;
+    if(isNaN(valor)){alert("Debes insertar numeros donde se te indica")}
+    else document.getElementById("result").innerHTML = "Resultado: " + valor;
 })
 
 
